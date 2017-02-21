@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="school">
+        <item>广东金融学院</item>
+
+
+
+    </string-array>
+
+    <string-array name="cate">
+        <item>北苑宿舍区</item>
+        <item>南苑宿舍区</item>
+        <item>新电</item>
+        <item>系办</item>
+        <item>其它(在简述中留言)</item>
+    </string-array>
+</resources>

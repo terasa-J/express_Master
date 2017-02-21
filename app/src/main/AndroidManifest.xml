@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hankkin.compustrading" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <!--一些手机的权限
+      摩托罗拉(motorola)，HTC(htc)，宏碁(aspire)，360(qihoo360)，天翼(ty)，索尼爱立信(sonyericsson)，OPPO(oppo)，
+联发科(mediatek)，华为(huawei)，百奇天气(baiqi.weather)，FEDE(fede)，LG(lge)，中科创达(thunderst)。-->
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dlauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.aspire.mm.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.aspire.mm.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.ty.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.ty.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.mediatek.launcherplus.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.mediatek.launcherplus.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="com.baiqi.weather.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.baiqi.weather.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.thunderst.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.thunderst.launcher.permission.WRITE_SETTINGS"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 往SDCard写入数据权限 -->
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.WithoutActionBar" >
+        <activity
+            android:name=".activity.MainShowActivity"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".activity.PersonActivity"
+            android:label="@string/title_activity_person" >
+        </activity>
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:label="@string/title_activity_prodect_detail" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".activity.NewProductActivity"
+            android:label="@string/title_activity_new_product" >
+        </activity>
+
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:label="@string/title_activity_person_info" >
+        </activity>
+        <activity
+            android:name=".activity.MyProductActivity"
+            android:label="myProductActivity" >
+        </activity>
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:label="collectionActivity" >
+        </activity>
+        <activity
+            android:name=".activity.SplasActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
